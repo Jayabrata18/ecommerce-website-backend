@@ -1,6 +1,6 @@
-module.exports = {
-  mongoURI:
-    "mongodb+srv://joy:joy1234@cluster0.otzsr41.mongodb.net/?retryWrites=true&w=majority",
+require("dotenv").config();
 
-  jwtSecret: "ecomm-secret",
+module.exports = {
+  mongoURI: process.env.MONGODB_PROD,
+  jwtSecret: process.env.MONGODB_JWT_SECRET,
 };

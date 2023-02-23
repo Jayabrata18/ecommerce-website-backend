@@ -1,0 +1,14 @@
+version: "3"
+services:
+    server:
+        build: 
+         dockerfile: Dockerfile.dev
+         context: ./
+        volumes:
+          - /server/node_modules
+          - ./:/server
+        environment:
+          - MONGODB_PROD=${MONGODB_PROD}
+        ports: -"5000:5000"     
+
+

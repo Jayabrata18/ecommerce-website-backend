@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const auth = require("../middleware/authorization");
 const { check, validationResult } = require("express-validator");
-const Product = require("../models/product");
+const Product = require("../models/Product");
 
 router.post(
   "/",

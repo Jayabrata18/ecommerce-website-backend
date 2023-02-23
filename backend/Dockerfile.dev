@@ -1,0 +1,10 @@
+FROM node: 14.17.6-alpine
+# Set the working directory to /app
+WORKDIR /app
+# Install dependencies
+COPY ./package.json ./
+RUN npm install
+# Install nodemon globally for live reloading
+RUN npm install -g nodemon
+COPY . .
+CMD ["npm" "start"]
