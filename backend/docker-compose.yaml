@@ -9,6 +9,7 @@ services:
           - ./:/server
         environment:
           - MONGODB_PROD=${MONGODB_PROD}
-        ports: -"5000:5000"     
+        ports:
+         - "5000:5000"     
 
 
