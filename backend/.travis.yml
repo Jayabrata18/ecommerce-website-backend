@@ -3,7 +3,7 @@ sudo : required
 services:
     - docker
 before_install: 
-    - docker build -t joy/app -f Dockerfile.Dockerfile.dev .
+    - docker build -t joy/app -f Dockerfile.dev .
 
 # script: 
 
